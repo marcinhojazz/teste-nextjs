@@ -1,12 +1,19 @@
-import styles from 'Home.module.css'
+import styles from '../styles/Layout.module.css'
+import Layout from '../components/Layout'
+import SearchBox from '../components/SearchBox'
 
-function index() {
+
+
+export default function Home() {
   return (
-    <div>
-      <h1>Teste Datlo</h1>
-      
+    <div className={styles.container}>
+      <Layout className={styles.layout}>
+        <div>
+          <h1>Teste Datlo</h1>
+        </div>
+
+        <SearchBox />
+      </Layout>
     </div>
   )
 }
-
-export default index
