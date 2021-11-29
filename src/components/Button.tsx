@@ -1,9 +1,16 @@
 import styles from '../styles/Layout.module.css'
 
-export default function Button() {
+interface ButtonProps {
+  nome: string
+  color: string
+  radius: string
+  onClick: () => void
+}
+
+export default function Button(props: ButtonProps) {
   return (
     <button className={styles.botao}>
-      Button
+      {props.children}
     </button>
   )
 }

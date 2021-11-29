@@ -1,11 +1,14 @@
 .container {
   border: 1px solid red;
+  width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
 }
 
 .searchbox {
-  max-width: 450px;
+  max-width: 312px;
+  min-width: 450px;
   border: 1px solid #111;
   border-radius: 4px;
   justify-content: center;
@@ -18,5 +21,23 @@
 }
 
 .botao {
-  /* display: flex; */
+  padding: 2px;
+  border-radius: 4px;
+  background-color: #FFE00A;
+  color: beige;
+  font-weight: bold;
+}
+
+.botao:hover {
+  background-color: #FFF5B4;
+  color: #666;
+  cursor: pointer;
+}
+
+.inputicon {
+  display: flex;
+}
+
+.icons {
+  width: 35px;
 }
